@@ -1,0 +1,7 @@
+# Bangladesh National Grid Daily Peak Electricity Demand Dataset (2016–2024)
+
+## Overview
+This repository contains a curated time-series dataset of **daily peak electricity demand** for the **Bangladesh national power grid**, compiled from official monthly operational reports published by **Power Grid Bangladesh PLC (PGCB)**.
+
+The dataset is intended to support **electricity demand forecasting**, **time-series analysis**, and **energy systems research**, particularly at the **national grid level**. It has been used to evaluate statistical, deep learning, and hybrid forecasting models in peer-reviewed research.
+
