@@ -13,3 +13,93 @@ The dataset is intended to support **electricity demand forecasting**, **time-se
 ## Dataset Description
 
 ### File
+Daily_Peak_Electricity_Demand_Bangladesh.csv
+
+### Temporal Coverage
+- **Start date:** 2016-01-01  
+- **End date:** 2024-09-30  
+- **Frequency:** Daily  
+- **Timezone:** Bangladesh Standard Time (BST, UTC+6)
+
+### Variables
+
+| Column | Type | Unit | Description |
+|------|------|------|-------------|
+| `Date_(DD/MM/YYYY)` | string (ISO-8601) | — | Calendar date (`DD-MM-YYYY`) |
+| `Day_Peak_Demand_MW` | numeric | MW | Daily maximum electricity demand during the day peak period |
+| `Evening_Peak_Demand_MW` | numeric | MW | Daily maximum electricity demand during the evening peak period |
+
+---
+
+## Definition of Day Peak Demand
+The **day peak demand** represents the **maximum system demand observed during the day peak hours** of each day, as reported in PGCB operational summaries.  
+Values correspond to **system-level demand (generation end)** and are expressed in **megawatts (MW)**.
+
+
+## Definition of Evening Peak Demand
+The **evening peak demand** represents the **maximum system demand observed during the evening peak hours** of each day, as reported in PGCB operational summaries.  
+Values correspond to **system-level demand (generation end)** and are expressed in **megawatts (MW)**.
+
+---
+
+## Data Source and Compilation Process
+- Original data were obtained from **monthly operational spreadsheets** published on the official website of **Power Grid Bangladesh PLC (PGCB)**.
+- Each monthly file contains daily records of day peak and evening peak demand.
+- The published dataset was created by:
+  1. Downloading monthly operational files
+  2. Extracting daily day and evening peak demand values
+  3. Merging all months into two continuous time series
+  4. Standardizing date format to ISO-8601
+
+
+---
+
+## Data Quality Notes
+- The dataset contains **3196 daily observations**.
+- All values in `Evening_Peak_Demand_MW` are complete (no missing entries).
+- Extreme values reflect real operational conditions (e.g., seasonal peaks, rapid demand growth).
+- Users are encouraged to apply their own preprocessing (e.g., deseasonalization, normalization) depending on modeling requirements.
+
+---
+
+## Intended Use
+This dataset is suitable for:
+- Short-term and medium-term load forecasting
+- Peak demand prediction
+- Benchmarking forecasting algorithms
+- Non-stationary time-series modeling
+- Energy system planning and reliability studies
+
+---
+
+## Limitations
+- The dataset does **not include exogenous variables** such as temperature, humidity, holidays, or economic indicators.
+- It represents **aggregate national demand only**; regional or feeder-level analysis is not possible.
+- Users should account for **structural changes** in demand due to policy, industrial growth, and electrification.
+
+---
+
+## Citation
+If you use this dataset in academic work, please cite it as:
+
+> Bhadra, D. (2026). *Bangladesh National Grid Daily Evening Peak Electricity Demand Dataset (2016–2024)*.
+
+A machine-readable citation is provided in `CITATION.cff`.
+
+---
+
+## License
+This dataset is released under the **Creative Commons Zero v1.0 Universal (CC0 1.0)** license, unless otherwise stated.
+
+---
+
+## Acknowledgment
+The authors acknowledge **Power Grid Bangladesh PLC (PGCB)** for making national grid operational data publicly available, which enabled the compilation of this dataset.
+
+---
+
+## Contact
+For questions, corrections, or collaboration inquiries:
+
+**Dipayan Bhadra**  
+Email: dipu_dipayan@outlook.com
