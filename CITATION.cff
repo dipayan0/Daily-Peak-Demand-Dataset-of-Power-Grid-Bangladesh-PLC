@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "Bangladesh National Grid Daily Evening Peak Demand (2016–2024)"
+message: "If you use this dataset, please cite it."
+type: dataset
+authors:
+  - family-names: Bhadra
+    given-names: Dipayan
+
+year: 2026
+license: CC0-1.0
