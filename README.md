@@ -83,7 +83,7 @@ This dataset is suitable for:
 
 The research work for which this dataset has been created and utilized is:
 
-https://doi.org/10.21203/rs.3.rs-8706187/v1
+> https://doi.org/10.21203/rs.3.rs-8706187/v1
 
 ## Citation
 If you use this dataset in academic work, please cite it as:
@@ -91,7 +91,8 @@ If you use this dataset in academic work, please cite it as:
 > Bhadra, D. (2026). *Bangladesh National Grid Daily Evening Peak Electricity Demand Dataset (2016–2024)*.
 
 You can also cite the paper as:
-Dipayan Bhadra, Rumana Rois. CNN-ResLSTM-ConNet: A Novel Hybrid Deep Learning Model for Peak Electricity Demand Forecasting of National Grid, 27 January 2026, PREPRINT (Version 1) available at Research Square [https://doi.org/10.21203/rs.3.rs-8706187/v1]
+
+> Dipayan Bhadra, Rumana Rois. CNN-ResLSTM-ConNet: A Novel Hybrid Deep Learning Model for Peak Electricity Demand Forecasting of National Grid, 27 January 2026, PREPRINT (Version 1) available at Research Square [https://doi.org/10.21203/rs.3.rs-8706187/v1]
 
 A machine-readable citation is provided in `CITATION.cff`.
 
